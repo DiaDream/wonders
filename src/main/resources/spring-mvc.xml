@@ -20,7 +20,7 @@
     <!--  配置mvc的拦截器 可以配置多个-->
     <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/user/*"/>
+            <mvc:mapping path="/admin/*"/>
             <bean class="com.xyb.interceptor.PromissionInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
@@ -53,6 +53,7 @@
     </bean>
     <!--资源文件-->
     <mvc:resources mapping="/swagger/**" location="/swagger/" />
+    <mvc:resources mapping="/static/**" location="/static/" />
     <mvc:annotation-driven />
     
     <!-- swaggerAPI设置-->

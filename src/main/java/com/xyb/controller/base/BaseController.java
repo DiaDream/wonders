@@ -25,7 +25,7 @@ public class BaseController {
     protected Map<String, Object> resultMap = new LinkedHashMap<String, Object>();
     public static String URL404 =  "/404.html";
     private final static String PARAM_PAGE_NO = "pageNo";
-
+    protected final int  loginMaxAge = 30*24*60*60;
     protected String pageSizeName = "pageSize";
 
     /**
